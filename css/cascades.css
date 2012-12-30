@@ -1,14 +1,14 @@
 body {
 	padding: 0;
 	margin: 0;
-
-	font-family: 'Calibri';
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9em;
 	}
 
 #mainBanner {
 	background-color: #FD5737;
 	width: 100%;
-	height: 225px;
+	height: 175px;
 	}
 	#mainBanner_table {
 		height:100%;
@@ -23,11 +23,10 @@ body {
 			}
 
 #email {
-	position:absolute;
-    left: 34%;
+	position:relative;
     width: 413px;
     height: 70px;
-    margin-top: -4.5%;
+    margin-top: -2%;
     border-radius: 12px;
     background-color: #FD5737;
 	}
@@ -38,14 +37,12 @@ body {
 		height: 50px;
 		border-radius: 12px;
 		font-style: bold;
-		margin-left: 3%;
 		border-collapse: collapse;
 		}
 	#add_email {
 		background-color: #FD5737;
 		width: 100px;
-		height: 40px;
-    	margin-left: 37%;
+		height: 35px;
     	margin-top: 3%;
     	border-bottom-left-radius: 12px;
     	border-bottom-right-radius: 12px;
@@ -54,8 +51,7 @@ body {
 			display: inline-block;
 			color: #FFFFFF;
 			font-size: 1.5em;
-			margin-left: 10%;
-			margin-top: 3%;
+			margin-top: 0%;
 		}
 		#add_email:active{
 			background-color: #FD421E;
@@ -66,7 +62,7 @@ body {
 	font-size: 1.75em;
 	text-align: center;
 	position: relative;
-	margin-top: 10%;
+	margin-top: 5%;
     left: 25%;
     right: 25%;
 	width: 50%;
@@ -79,7 +75,8 @@ body {
 #info {
 	position:relative;
 	margin-left: 15%;
-	margin-top: 1%;
+	margin-top: 2.5%;
+	margin-bottom: 5%;
 	width: 70%;
 	height: 200px;
 	}
