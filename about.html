@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"-->
+        <title>Katibean</title>
+        <script type="text/javascript" src="./javascript/javascript.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/about.css" /> 
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body onload="overlay();">
+    	<div id="mainBanner">
+    		<table id="mainBanner_table" >
+				<tr>
+					<td><img src="./images/logo_header.png" /></td>
+				</tr>
+    		</table>
+    	</div>
+    	<div id="introduction">
+            <div id="definition">
+                <img src="./images/Katibean_meaning.png" />
+            </div>
+            <div id="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+    	</div>
+    	<div id="info">
+            <span>Meet the Team</span>
+    		<table id="info_table" >
+				<tr>
+					<td class="info_pic"><img src="./images/pic_HuzaifaSial.png" />
+                    </td>
+					<td class="info_pic"><img src="./images/pic_ShafkatulHaque.png" /></td>
+                    <td class="info_pic"><img src="./images/pic_MujtabaArshad.png" /></td>
+				</tr>
+                <tr>
+                    <td class="info_text">
+                        <span id="info_title">The Visionary</span>
+                        <br/>
+                        <div id="info_name">Huzaifa Sial</div>
+                        <br />
+                        <div id="socials">
+                            <img id="huzaifa_aboutme" src="./images/icon_aboutme.png" onmouseover="hover( 'huzaifa_aboutme','./images/icon_aboutme_hover.png' )" onmouseout="hover( 'huzaifa_aboutme','./images/icon_aboutme.png' )" />
+                            <img id="huzaifa_linkedin" src="./images/icon_linkedin.png" onmouseover="hover( 'huzaifa_linkedin','./images/icon_linkedin_hover.png' )" onmouseout="hover( 'huzaifa_linkedin','./images/icon_linkedin.png' )" />
+                            <img id="huzaifa_twitter" src="./images/icon_twitter.png" onmouseover="hover( 'huzaifa_twitter','./images/icon_twitter_hover.png' )" onmouseout="hover( 'huzaifa_twitter','./images/icon_twitter.png' )" />
+                        </div>
+                        <div id="more_info">Some Text</div>
+                    </td>
+                    <td class="info_text">
+                        <span id="info_title">The Pioneer</span>
+                        <br/>
+                        <div id="info_name">Shafkat ul Haque</div>
+                        <br />
+                        <div id="socials">
+                            <img id="shafkat_aboutme" src="./images/icon_aboutme.png" onmouseover="hover( 'shafkat_aboutme','./images/icon_aboutme_hover.png' )" onmouseout="hover( 'shafkat_aboutme','./images/icon_aboutme.png' )" />
+                            <img id="shafkat_linkedin" src="./images/icon_linkedin.png" onmouseover="hover( 'shafkat_linkedin','./images/icon_linkedin_hover.png' )" onmouseout="hover( 'shafkat_linkedin','./images/icon_linkedin.png' )" />
+                            <img id="shafkat_twitter"src="./images/icon_twitter.png" onmouseover="hover( 'shafkat_twitter','./images/icon_twitter_hover.png' )" onmouseout="hover( 'shafkat_twitter','./images/icon_twitter.png' )" />
+                        </div>
+                        <div id="more_info">Some Text</div>
+                    </td>
+                    <td class="info_text">
+                        <span id="info_title">The Alpha</span>
+                        <br/>
+                        <div id="info_name">Mujtaba Arshad</div>
+                        <br />
+                        <div id="socials">
+                            <img id="mujtaba_aboutme" src="./images/icon_aboutme.png" onmouseover="hover( 'mujtaba_aboutme','./images/icon_aboutme_hover.png' )" onmouseout="hover( 'mujtaba_aboutme','./images/icon_aboutme.png' )" />
+                            <img id="mujtaba_linkedin" src="./images/icon_linkedin.png" onmouseover="hover( 'mujtaba_linkedin','./images/icon_linkedin_hover.png' )" onmouseout="hover( 'mujtaba_linkedin','./images/icon_linkedin.png' )" />
+                            <img id="mujtaba_twitter" src="./images/icon_twitter.png" onmouseover="hover( 'mujtaba_twitter','./images/icon_twitter_hover.png' )" onmouseout="hover( 'mujtaba_twitter','./images/icon_twitter.png' )" />
+                        </div>
+                        <div id="more_info">Some Text</div>
+                    </td>
+                </tr>
+    		</table>
+    	</div>
+        <center>
+            <div id="overlay" class="black_overlay">
+            </div>
+            <div id="dialog">
+                  <div id="dialog_header">
+                    Lets Connect!
+                  </div>
+                  <div id="dialog_subheader">
+                    Have any comments, requests or suggestions?<br/>
+                    Write us a quick note and let us know what you think.
+                  </div>
+                  <input type="text" id="email_input" placeholder="youremail@something.com"></input>
+                  <br />
+                    <select id="subject" name="cars">
+                        <option value="salaam">Assalaamu Alaikum guys!</option>
+                        <option value="help">I need some help!</option>
+                        <option value="join">I want to join your team!</option>
+                    </select>
+                    <br />
+                    <input type="text" id="message_input" placeholder="message"></input>
+                    <br />
+                    <div class="contactBtn">Send</div>
+            </div>
+        <center>
+    	<div id="footer">
+    		<span>For the self-directed, motivated Muslim.</span>
+    		<div class="footer_button" id="about"><p>About</p></div>
+    		<div class="footer_button" id="contact"><p>Contact Us<p></div>
+    	</div>
+        <script>
+            var hover = function( id, src ) {
+                var el = document.getElementById( id );
+                el.src = src;
+            }
+
+            function overlay() {
+                el = document.getElementById("overlay");
+                el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+                el.style.width = (document.body.offsetWidth).toString() + 'px';
+                el.style.height = document.body.offsetHeight.toString() + 'px';
+
+                var dialog = document.getElementById( 'dialog' );
+                dialog.style.width = ((document.body.offsetWidth/100)*60).toString() + 'px';
+                dialog.style.height = ((document.body.offsetHeight/100)*75).toString() + 'px';
+
+                var email_input = document.getElementById( 'email_input' );
+                email_input.style.width = ((document.body.offsetWidth/100)*35).toString() + 'px';
+                email_input.style.height = ((document.body.offsetHeight/100)*7).toString() + 'px';
+
+                var message_input = document.getElementById( 'message_input' );
+                message_input.style.width = ((document.body.offsetWidth/100)*35).toString() + 'px';
+                message_input.style.height = ((document.body.offsetHeight/100)*20).toString() + 'px';
+
+            }
+        </script>
+    </body>
+</html>
