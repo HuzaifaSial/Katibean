@@ -1,0 +1,355 @@
+
+<html>
+<head>
+<style type="text/css">
+body { margin:0; border:0;}
+a:link { text-decoration:underline; color: #000; }
+
+.prayer_title {
+		color: #CDCDCD;
+		font-size: 1em;
+		}
+		
+#hadith {
+	color: #2BA5AE;
+	font-size: 1.25em;
+	text-align: center;
+	position: relative;
+	margin-top: 5%;
+    left: 25%;
+	width: 50%;
+	}
+	#hadith img {
+		vertical-align: middle;
+		}
+		
+.prayers {
+	text-align: center;
+	position: relative;
+	margin-top: 5%;
+    left: 17%;
+	width: 75%;
+	}
+	
+#complete {
+	text-align: center;
+	position: relative;
+	margin-top: 15%;
+	left: 25%;
+	width: 50%;
+	}
+	
+#footer {
+	color:#000000;
+	text-align: center;
+	position: relative;
+	margin-top: 5%;
+	left: 25%;
+	width: 50%;
+	}
+
+.submitbutton{
+    background: url(images/submit_exit.png) 0px 0px no-repeat;
+    width: 56px;
+    height: 56px;
+    border: 0px;
+}
+.submitbutton:hover{  
+      background: url(images/submit_pressed.png) 0px 0px no-repeat;
+}
+
+.holder{ margin-left:1%; width:80px; float:left; position:relative;}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+/* FAJR */
+.fajr {
+	position:relative;
+	width: 75px;
+	height: 75px;
+	background: #cdcdcd url(images/icon_uncheck.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+}
+
+.fajr label {
+	position:relative;
+	cursor: pointer;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+}
+
+.fajr label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: #f85a2a url(images/icon_check.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	
+	left: 0px;
+	top: 0px;
+}
+
+.fajr label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.fajr input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* Duhr */
+.duhr {
+	position:relative;
+	width: 75px;
+	height: 75px;
+	background: #cdcdcd url(images/icon_uncheck.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+}
+
+.duhr label {
+	position:relative;
+	cursor: pointer;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+}
+
+.duhr label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: #f4c712 url(images/icon_check.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	
+	left: 0px;
+	top: 0px;
+}
+
+.duhr label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.duhr input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* asr */
+.asr {
+	position:relative;
+	width: 75px;
+	height: 75px;
+	background: #cdcdcd url(images/icon_uncheck.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+}
+
+.asr label {
+	position:relative;
+	cursor: pointer;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+}
+
+.asr label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: #38a5af url(images/icon_check.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	
+	left: 0px;
+	top: 0px;
+}
+
+.asr label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.asr input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* .mag */
+.mag {
+	position:relative;
+	width: 75px;
+	height: 75px;
+	background: #cdcdcd url(images/icon_uncheck.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+}
+
+.mag label {
+	position:relative;
+	cursor: pointer;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+}
+
+.mag label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: #9a5097 url(images/icon_check.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	
+	left: 0px;
+	top: 0px;
+}
+
+.mag label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.mag input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+/* .isha */
+.isha {
+	position:relative;
+	width: 75px;
+	height: 75px;
+	background: #cdcdcd url(images/icon_uncheck.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+}
+
+.isha label {
+	position:relative;
+	cursor: pointer;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+}
+
+.isha label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	background: #1c2623 url(images/icon_check.png) center no-repeat;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+	
+	left: 0px;
+	top: 0px;
+}
+
+.isha label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.isha input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<div style="width:640px; border:1px solid;">
+    <div id="hadith">
+                <em>&#8220The thing that Allah (SWT) loves most 
+    is when his people pray Salah on time.&#8221 </em>
+                <img id="pbuhArabic" src='./images/Muhammad_saw.png' />
+    </div>
+    
+<div class="prayers">
+<div class="holder">
+	<div class="fajr"><input type="checkbox" value="None" id="fajr" name="check" /><label for="fajr"></label></div>
+</div> . 
+<div class="holder">
+	<div class="duhr"><input type="checkbox" value="None" id="duhr" name="check" /><label for="duhr"></label></div>
+</div>
+<div class="holder">
+	<div class="asr"><input type="checkbox" value="None" id="asr" name="check" /><label for="asr"></label></div>
+</div>
+<div class="holder">
+	<div class="mag"><input type="checkbox" value="None" id="mag" name="check" /><label for="mag"></label></div>
+</div>
+<div class="holder">
+	<div class="isha"><input type="checkbox" value="None" id="isha" name="check" /><label for="isha"></label></div>
+</div>
+</div>
+
+<div id="complete" class="prayer_title">
+<input type="submit" class="submitbutton" value="" /><br>
+Submit
+</div>
+
+<div id="footer">
+<a href="katibean.com/asjheg123">katibean.com/asjheg123</a><br>
+<span class="prayer_title">visit dash to unsubscribe.</span></div>
+</div>
+</body>
+</html>
